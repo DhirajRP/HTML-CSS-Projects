@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.hero-sec {
+  background-image: url(images/soft-dev.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text_container {
+  color: white;
+  max-width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.text_container h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+.text_container h2 span {
+  font-size: 72px;
+  font-weight: 400;
+}
+.text_container h1 {
+  font-size: 72px;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+.black_box {
+  background-color: black;
+}
+.black_box h2 {
+  font-weight: 300;
+  color: white;
+  max-width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-size: 32px;
+  word-spacing: 2px;
+  padding: 50px;
+}
+.black_box h2 span {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+.work {
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1100px;
+  margin: 50px auto;
+}
+.grid_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.part {
+  max-width: 320px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+}
+
+.part:hover {
+  transform: scale(1.075);
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.4);
+  transition: 0.2s ease-in-out;
+}
+.part h4 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.bottom_sec {
+  display: flex;
+  color: white;
+
+  min-height: 300px;
+}
+.about {
+  background-color: #515603;
+}
+.contact {
+  background-color: #722300;
+}
+.contact,
+.about {
+  padding: 32px;
+}
+.contact h2,
+.about h2 {
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.contact p,
+.about p {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+footer {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+@media (max-width: 786px) {
+  .hero-sec {
+    min-height: 50vh;
+  }
+  .text_container {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .bottom_sec {
+    flex-direction: column;
+  }
+}
