@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Manu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .navbar {
+        background-color: rgb(203, 231, 231);
+        border-radius: 30px;
+      }
+
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        margin: 10px 10px;
+      }
+      .navbar li a {
+        padding: 3px 6px;
+        text-decoration: none;
+        color: rgb(69, 48, 48);
+        font-family: "Ubuntu", sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+      .navbar li a:hover {
+        color: red;
+      }
+      .search {
+        float: right;
+        padding: 8px;
+        text-decoration: none;
+        color: rgb(69, 48, 48);
+        font-family: "Ubuntu", sans-serif;
+        text-transform: uppercase;
+      }
+      .navbar input {
+        border: 1.5px solid black;
+        border-radius: 15px;
+        padding: 3px 15px;
+        background-color: #ccc;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <div class="search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="search here"
+            />
+          </div>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
