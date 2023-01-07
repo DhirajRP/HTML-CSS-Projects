@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+      }
+      .container {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(234, 188, 103);
+      }
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ccc;
+        padding: 15px;
+        border: 1.5px solid red;
+        height: 250px;
+        width: 250px;
+        border-radius: 15px;
+        transition: all 1s ease-in 0.2s;
+      }
+      .box:hover {
+        /* transform: rotate(360deg); */
+        transform: scale(1.25);
+      }
+    </style>
+  </head>
+  <body>
+    <div><h3>Transform</h3></div>
+    <div class="container">
+      <div class="box">
+        <h5>this is my box</h5>
+      </div>
+    </div>
+  </body>
+</html>

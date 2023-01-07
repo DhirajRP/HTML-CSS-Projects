@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box | Text Shadows</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 12px;
+        font-weight: 300;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .container {
+        display: flex;
+      }
+      .card {
+        padding: 23px 12px;
+        border: 1.5px solid white;
+        background-color: rgb(231, 225, 225);
+        border-radius: 12px;
+
+        box-shadow: inset 3px 3px 5px 3px rgb(99, 113, 99, 0.3),
+          3px 3px 5px 3px rgb(99, 113, 99, 0.3);
+        margin: 23px 12px;
+        text-align: center;
+      }
+      p {
+        margin-top: 10px;
+        text-align: justify;
+      }
+      h2 {
+        text-shadow: 2px 2px white;
+      }
+      h1 {
+        text-shadow: 5px 3px #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>Box Shadows | Text Shadows</h1></div>
+    <div class="container">
+      <div class="card" id="card1">
+        <h2>Card 1</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde maxime
+          commodi quae dolore, possimus nesciunt quidem corporis doloribus ut,
+          id cumque laborum eaque porro molestias. Dolor, omnis expedita
+          temporibus laudantium tenetur, provident, odio repudiandae facilis
+          voluptatum ipsa modi inventore quis ab similique?
+        </p>
+      </div>
+      <div class="card" id="card2">
+        <h2>Card 2</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde maxime
+          commodi quae dolore, possimus nesciunt quidem corporis doloribus ut,
+          id cumque laborum eaque porro molestias. Dolor, omnis expedita
+          temporibus laudantium tenetur, provident, odio repudiandae facilis
+          voluptatum ipsa modi inventore quis ab similique?
+        </p>
+      </div>
+      <div class="card" id="card3">
+        <h2>Card 3</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde maxime
+          commodi quae dolore, possimus nesciunt quidem corporis doloribus ut,
+          id cumque laborum eaque porro molestias. Dolor, omnis expedita
+          temporibus laudantium tenetur, provident, odio repudiandae facilis
+          voluptatum ipsa modi inventore quis ab similique?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
