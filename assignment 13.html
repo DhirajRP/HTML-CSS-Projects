@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .table thead th,
+      .table tbody td {
+        padding: 10px;
+        text-align: center;
+        width: 75px;
+        height: 15px;
+        border: 1px solid rgb(143, 127, 127);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Time Table</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Day/ Perios</th>
+            <th>I</th>
+            <th>II</th>
+            <th>III</th>
+            <th></th>
+            <th>IV</th>
+            <th>V</th>
+            <th>VI</th>
+            <th>VII</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Eng</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td rowspan="5">LUNCH</td>
+            <td colspan="3">LAB</td>
+            <td>Phy</td>
+          </tr>
+
+          <tr>
+            <td>Tuesday</td>
+            <td colspan="3">Lab</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Math</td>
+            <td>Sport</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Eng</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td colspan="3">Library</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LAB</td>
+            <td>Math</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LAB</td>
+            <td>Math</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
