@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms | HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 15px;
+
+        }
+        .container{
+            background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        }
+        h2{
+            text-align: center;
+        margin-top: 24px;
+        font-weight: bold;
+        }
+        p{
+            text-align: center;
+       margin-bottom: 24px;
+       font-size: 15px;
+       
+        }
+        table{
+            border: 1px solid lightgray;
+            background-color: rgb(201, 191, 191);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button{
+        margin-top: 30px;
+        background-color: rgb(83, 153, 132);
+        padding: 12px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+width: 15%;
+      }
+      tr{
+        margin-bottom: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>KM Custom HTML Form</h2>
+      <p>(By Dhiraj P)</p>
+      <form action="">
+        <table>
+          <tr>
+            <th>Name:</th>
+            <td><input type="text" placeholder="Enter Name" /></td>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <td><input type="email" placeholder="Enter Email" /></td>
+          </tr>
+          <tr>
+            <th>Password</th>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <th>
+              Pick Your Favourite:
+              <p class="p1">Check right if approve</p>
+            </th>
+            <td><input type="checkbox" />Do You approve</td>
+          </tr>
+          <tr>
+            <th>Pick Your Favourite</th>
+            <td>
+              <input type="radio" /> Choice A <input type="radio" /> Choice B
+              <input type="radio" /> Choice C
+            </td>
+          </tr>
+          <tr>
+            <th>Popup Menu</th>
+            <td>
+                <select name="" id="" size="1" >
+                    <option value="">Texas</option>
+                    <option value="">India</option>
+                    <option value="">Us</option>
+                    <option value="">UK</option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <th>List
+                <p class="p1">
+                    <ul type=""none>
+                        <li>Allow Multiselect</li>
+                        <li>No of rows to display</li>
+                    </ul>
+                </p>
+            </th>
+            <td>
+                <ul type=""none>
+                    <li>Delhi</li>
+                    <li>Mumbai</li>
+                    <li>Kerala</li>
+                    <li>Satara</li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>
+                Field Ignored by KM
+            </th>
+            <td>
+                <input type="number">
+            </td>
+          </tr>
+          <tr>
+            <th>Text Area</th>
+            <td>
+                <textarea name="" id="" cols="30" rows="10">You can now write here</textarea>
+            </td>
+          </tr>
+          
+
+        </table>
+
+      </form>
+      <button>Save</button>
+      <button>Cancel</button>
+      <button>Resize</button>
+    </div>
+  </body>
+</html>
