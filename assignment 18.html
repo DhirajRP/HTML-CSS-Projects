@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 15px 30px;
+        padding: 8px;
+        line-height: 30px;
+      }
+      .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+      }
+      p{
+        margin-bottom: 15px;
+      }
+      h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      input [type="text"],
+      input [type="number"],
+      input[type="email"],
+      input[type="date"],
+      select,
+      textarea{
+        width: 100%;
+        padding: 18px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      fieldset{
+        background-color: #fff;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .heading{
+        text-align: center;
+        padding: 24px;
+        font-weight: bold;
+      }
+      button{
+        margin-top: 30px;
+        background-color: rgb(83, 153, 132);
+        padding: 12px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+width: 100%;
+      }
+      button :hover{
+        background-color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1 class="heading">Payment From</h1>
+        <hr />
+        <h2>User Information</h2>
+        <p>
+          Name :
+          <input type="text" required />
+        </p>
+        <p>
+            <fieldset>
+                <legend>Gender</legend>
+                <ul type="none">
+                    <li>Male <input type="radio"> </li>
+                    <li>Female <input type="radio"></li>
+                </ul>
+            </fieldset>
+        </p>
+        <p>
+            Address: 
+            <textarea name="" id="add" cols="90" rows="5" placeholder="Enetr Address"></textarea>
+        </p>
+        <p>
+            Email:
+            <input type="email" placeholder="Enter Email">
+        </p>
+        <p>
+            Pincode:
+            <input type="number">
+        </p>
+        <h2>Payment nformation</h2>
+        <p>
+            Card Type:
+            <select name="Select card" id="" >
+                <option value="">--Select card type--</option>
+                <option value="">Debit Card</option>
+                <option value="">Credit Card</option>
+            </select>
+        </p>
+        <p>
+            Card Number:
+            <input type="number" required>
+        </p>
+        <p>
+            Expiration Date:
+            <input type="date">
+        </p>
+        <p>CVV:
+            <input type="text" placeholder="123">
+        </p>
+        <p>
+            <button>Pay Now</button>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
